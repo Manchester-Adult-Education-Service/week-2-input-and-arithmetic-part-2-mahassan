@@ -41,7 +41,9 @@ print("-------------------------------------------\n"
 # 3. Print: "Hello [name]! You said you are [age_text] years old."
 
 # Write your code below:
-
+# name = input("What is your name? ")
+# age_text = input("What is your age? ")
+# print(f"Hello {name}! You said you are {age_text} years old")
 
 # -------------------------------------------
 # Task 2: Data Types and Conversion
@@ -66,7 +68,8 @@ print("\n-------------------------------------------\n"
 #    Hint: Use {age + 1} inside your f-string.
 
 # Write your code below:
-
+# age = int(age_text)
+# print(f"Next year the age will be {age + 1}")
 
 # -------------------------------------------
 # Task 3: Customising the Experience
@@ -89,8 +92,10 @@ print("\n-------------------------------------------\n"
 # 3. Use .capitalize() on the food and song variables.
 
 # Write your code below:
+# fav_food = input("What is your favourite food? ")
+# fav_song = input("What is your favourite song? ")
 
-
+# print(f"You said your favourite food is {fav_food.capitalize()} and favourite song is {fav_song.capitalize()}.")
 # -------------------------------------------
 # CHECKPOINT: GIT COMMIT
 # -------------------------------------------
@@ -124,7 +129,9 @@ print("\n-------------------------------------------\n"
 # Print: "You are at least [X] months old!"
 
 # Write your code below:
+# age_to_months = int(input(f"What is your age? "))
 
+# print(f"Your age in months is {age_to_months * 12}")
 
 # Extension 2: Name Lengths
 # -------------------------------------------
@@ -137,7 +144,8 @@ print("\n-------------------------------------------\n"
 # Print: "[City] has [X] letters in its name."
 
 # Write your code below:
-
+# fav_city = input("What is your favourite city? ")
+# print(f"{fav_city} has {len(fav_city)} letters in its name.")
 
 # Extension 3: The Area Calculator
 # -------------------------------------------
@@ -179,6 +187,15 @@ print("\n-------------------------------------------\n"
 # Hint: To calculate a 10% tip, you can do: bill * 0.10
 
 # Write your code below:
+
+total_bill = int(input("What is total bill? "))
+amount_of_ppl_sharing_bill = int(input("How many people are sharing the bill? "))
+tip = int(input("What % tip should be added? "))
+converted_percentage_tip = int(tip * 100)
+total_bill_and_added_tip = total_bill+converted_percentage_tip
+print(f"The bill is divided into {amount_of_ppl_sharing_bill} and each person will give {total_bill_and_added_tip/amount_of_ppl_sharing_bill}")
+
+
 
 
 # -------------------------------------------
