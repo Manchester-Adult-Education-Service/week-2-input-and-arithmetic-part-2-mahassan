@@ -144,8 +144,8 @@ print("\n-------------------------------------------\n"
 # Print: "[City] has [X] letters in its name."
 
 # Write your code below:
-fav_city = input("What is your favourite city? ")
-print(f"{fav_city} has {len(fav_city)} letters in its name.")
+# fav_city = input("What is your favourite city? ")
+# print(f"{fav_city} has {len(fav_city)} letters in its name.")
 
 # Extension 3: The Area Calculator
 # -------------------------------------------
@@ -187,6 +187,15 @@ print("\n-------------------------------------------\n"
 # Hint: To calculate a 10% tip, you can do: bill * 0.10
 
 # Write your code below:
+
+total_bill = int(input("What is total bill? "))
+amount_of_ppl_sharing_bill = int(input("How many people are sharing the bill? "))
+tip = int(input("What % tip should be added? "))
+converted_percentage_tip = int(tip * 100)
+total_bill_and_added_tip = total_bill+converted_percentage_tip
+print(f"The bill is divided into {amount_of_ppl_sharing_bill} and each person will give {total_bill_and_added_tip/amount_of_ppl_sharing_bill}")
+
+
 
 
 # -------------------------------------------
